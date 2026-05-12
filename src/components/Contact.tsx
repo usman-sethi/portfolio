@@ -91,7 +91,7 @@ export default function Contact() {
                 <Mail className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-sm text-gray-400 mb-1">Email</h4>
+                <h3 className="text-sm text-gray-400 mb-1">Email</h3>
                 <p className="text-gray-200 font-medium break-all">usmansethi016@gmail.com</p>
               </div>
             </motion.a>
@@ -111,7 +111,7 @@ export default function Contact() {
                 <Github className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-sm text-gray-400 mb-1">GitHub</h4>
+                <h3 className="text-sm text-gray-400 mb-1">GitHub</h3>
                 <p className="text-gray-200 font-medium">usman-sethi</p>
               </div>
             </motion.a>
@@ -131,7 +131,7 @@ export default function Contact() {
                 <Linkedin className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-sm text-gray-400 mb-1">LinkedIn</h4>
+                <h3 className="text-sm text-gray-400 mb-1">LinkedIn</h3>
                 <p className="text-gray-200 font-medium">Usman Sethi</p>
               </div>
             </motion.a>

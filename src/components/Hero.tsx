@@ -82,7 +82,7 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                   <div className="w-3 h-3 rounded-full bg-green-500/80" />
                 </div>
-                <div className="text-xs text-gray-500 font-mono flex-1 text-center">app.tsx</div>
+                <div className="text-xs text-gray-400 font-mono flex-1 text-center">app.tsx</div>
               </div>
               <pre className="font-mono text-sm text-gray-300 overflow-x-hidden">
                 <code className="block text-purple-400">import <span className="text-blue-300">{`{ useState, useEffect }`}</span> from <span className="text-green-300">'react'</span>;</code>
