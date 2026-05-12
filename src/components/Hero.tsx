@@ -71,11 +71,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md"
           >
-            <motion.div
-              animate={{ y: [0, -15, 0] }}
-              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="glass p-6 rounded-2xl border border-white/10 shadow-2xl relative z-20"
-            >
+            <div className="glass p-6 rounded-2xl border border-white/10 shadow-2xl relative z-20 animate-float-slow">
               <div className="flex items-center space-x-3 border-b border-white/10 pb-4 mb-4">
                 <div className="flex space-x-1.5">
                   <div className="w-3 h-3 rounded-full bg-red-500/80" />
@@ -97,41 +93,29 @@ export default function Hero() {
                 <code className="block pl-4 mt-1 text-purple-400">);</code>
                 <code className="block mt-1 text-blue-400">{`}`}</code>
               </pre>
-            </motion.div>
+            </div>
 
             {/* Floating decorator cards */}
-            <motion.div
-              animate={{ y: [0, 15, 0], rotate: [0, 5, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute -top-10 -right-10 glass px-4 py-3 rounded-xl z-10 flex items-center space-x-3"
-            >
+            <div className="absolute -top-10 -right-10 glass px-4 py-3 rounded-xl z-10 flex items-center space-x-3 animate-float-medium">
               <div className="p-2 bg-blue-500/20 rounded-lg text-blue-400">
                 <Terminal size={16} />
               </div>
               <span className="text-xs font-medium text-gray-300">Backend API</span>
-            </motion.div>
+            </div>
 
-            <motion.div
-              animate={{ y: [0, -10, 0], rotate: [0, -5, 0] }}
-              transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 0.5 }}
-              className="absolute -bottom-8 -left-10 glass px-4 py-3 rounded-xl z-30 flex items-center space-x-3"
-            >
+            <div className="absolute -bottom-8 -left-10 glass px-4 py-3 rounded-xl z-30 flex items-center space-x-3 animate-float-fast">
               <div className="p-2 bg-purple-500/20 rounded-lg text-purple-400">
                 <Code2 size={16} />
               </div>
               <span className="text-xs font-medium text-gray-300">Clean UI/UX</span>
-            </motion.div>
+            </div>
             
-            <motion.div
-              animate={{ y: [0, 20, 0] }}
-              transition={{ repeat: Infinity, duration: 8, ease: "easeInOut", delay: 2 }}
-              className="absolute top-1/2 -right-14 glass px-4 py-3 rounded-xl z-10 flex items-center space-x-3"
-            >
+            <div className="absolute top-1/2 -right-14 glass px-4 py-3 rounded-xl z-10 flex items-center space-x-3 animate-float-delay">
               <div className="p-2 bg-green-500/20 rounded-lg text-green-400">
                 <Database size={16} />
               </div>
               <span className="text-xs font-medium text-gray-300">MongoDB</span>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
