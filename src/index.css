@@ -17,6 +17,32 @@
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
   }
+
+  --animate-float-slow: float-slow 6s ease-in-out infinite;
+  --animate-float-medium: float-medium 5s ease-in-out infinite;
+  --animate-float-fast: float-fast 7s ease-in-out infinite;
+  --animate-float-delay: float-delay 8s ease-in-out infinite;
+
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(15px) rotate(5deg); }
+  }
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-10px) rotate(-5deg); }
+  }
+  @keyframes float-delay {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,7 +72,22 @@ h1, h2, h3, h4, h5, h6 {
 .glass-accent {
   background: rgba(168, 85, 247, 0.05);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.safari-blur-120 {
+  filter: blur(120px);
+  -webkit-filter: blur(120px);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.safari-blur-100 {
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* Hide scrollbar for clean minimal look */

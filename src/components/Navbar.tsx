@@ -97,9 +97,9 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden absolute top-full left-6 right-6 mt-2"
+            className="md:hidden absolute top-full left-6 right-6 mt-2 glass rounded-2xl shadow-2xl z-50"
           >
-            <div className="glass rounded-2xl p-4 flex flex-col space-y-4">
+            <div className="p-4 flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

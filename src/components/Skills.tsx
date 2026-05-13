@@ -120,7 +120,7 @@ export default function Skills() {
                   scale: 1.05,
                   y: -5,
                 }}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg px-6 py-4 cursor-pointer"
+                className="group relative overflow-hidden rounded-2xl border border-white/10 glass px-6 py-4 cursor-pointer transform-gpu"
               >
                 {/* Hover Glow */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-cyan-500/10 via-cyan-400/20 to-blue-500/10" />

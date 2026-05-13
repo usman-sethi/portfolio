@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-        <div className="absolute w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[120px] top-1/2 left-1/4 -translate-y-1/2" />
-        <div className="absolute w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-[100px] top-1/2 right-1/4 -translate-y-1/2" />
+      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
+        <div className="absolute w-[600px] h-[600px] md:w-[800px] md:h-[800px] bg-[radial-gradient(circle,rgba(59,130,246,0.15)_0%,transparent_70%)] top-1/2 left-1/4 -translate-y-1/2" />
+        <div className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-[radial-gradient(circle,rgba(168,85,247,0.15)_0%,transparent_70%)] top-1/2 right-1/4 -translate-y-1/2" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full z-10 grid lg:grid-cols-2 gap-12 items-center">
